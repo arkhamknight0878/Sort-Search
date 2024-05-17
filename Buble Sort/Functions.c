@@ -5,7 +5,7 @@
 #include <time.h>
 #include <stdbool.h>
 
-int* Rand_Arr_Create(unsigned int size_)
+int* Rand_Arr_Create(unsigned size_)
 {
 	while (size_ == 0)
 	{
@@ -25,7 +25,7 @@ int* Rand_Arr_Create(unsigned int size_)
 	return arr;
 }
 
-void Arr_Print(int* arr_, unsigned int size_)
+void Arr_Print(int* arr_, unsigned size_)
 {
 	if (!arr_)
 		return;
@@ -34,7 +34,7 @@ void Arr_Print(int* arr_, unsigned int size_)
 		printf("%d ", arr_[i]);
 }
 
-void Sort_Buble(int* arr_, unsigned int size_)
+void Sort_Buble(int* arr_, unsigned size_)
 {
 	if (!arr_)
 		return;
