@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int* Arr_Create(unsigned int size_)
+int* Arr_Create(unsigned size_)
 {
 	while (size_ == 0)
 	{
@@ -15,29 +15,29 @@ int* Arr_Create(unsigned int size_)
 	if (!arr)
 		return NULL;
 
-	for (unsigned int i = 0; i < size_; ++i)
+	for (unsigned i = 0; i < size_; ++i)
 		arr[i] = i * 2;
 
 	return arr;
 }
 
-void Arr_Print(int* arr_, unsigned int size_)
+void Arr_Print(int* arr_, unsigned size_)
 {
 	if (!arr_)
 		return;
 
-	for (unsigned int i = 0; i < size_; ++i)
+	for (unsigned i = 0; i < size_; ++i)
 		printf("%2u.%u\n", i, arr_[i]);
 }
 
-int Search_Binary(int* arr_, unsigned int size_, unsigned int key_)
+int Search_Binary(int* arr_, unsigned size_, unsigned key_)
 {
 	if (!arr_)
 		return -2;
 
-	unsigned int left = 0;
-	unsigned int right = size_;
-	unsigned int midle = 0;
+	unsigned left = 0;
+	unsigned right = size_;
+	unsigned midle = 0;
 
 	while (left < right)
 	{
