@@ -4,12 +4,12 @@
 
 int main()
 {
-	unsigned int size = 0;
+	unsigned size = 0;
 
 	printf("Plese, Enter Array Size:\n> ");
 	scanf_s("%u", &size);
 
-	unsigned char* arr = Rand_Arr_Create(size);
+	int* arr = Rand_Arr_Create(size);
 
 	printf("-----------------------------------\n");
 	printf("Generated Array: ");
