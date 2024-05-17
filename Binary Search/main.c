@@ -4,13 +4,13 @@
 
 int main()
 {
-	unsigned int size = 0;
-	unsigned int key = 0;
+	unsigned size = 0;
+	unsigned key = 0;
 	
 	printf("Plese, Enter Array Size:\n> ");
 	scanf_s("%u", &size);
 
-	unsigned char* arr = Arr_Create(size);
+	int* arr = Arr_Create(size);
 
 	printf("-----------------------------------\n");
 	printf("Generated Array:\n");
